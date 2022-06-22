@@ -3,8 +3,7 @@ package ru.serdyuk;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-import javax.swing.text.SimpleAttributeSet;
-import javax.swing.text.StyledDocument;
+import javax.swing.text.*;
 
 /**
  * @author Serdyuk S.B.
@@ -14,11 +13,14 @@ public class MyChatBot extends JFrame implements ActionListener {
     final int START_LOCATION = 200;
     final int WINDOW_WIDTH = 350;
     final int WINDOW_HEIGHT = 450;
+    final String CHB_AI = "AI";
+    final String BTN_ENTER = "Enter";
 
     JTextArea dialogue;
     JCheckBox ai;
     JTextField message;
     SimpleBot simpleBot;
+    SimpleAttributeSet botStyle;
 
     public static void main(String[] args) {
         new MyChatBot();
@@ -32,14 +34,18 @@ public class MyChatBot extends JFrame implements ActionListener {
         dialogue = new JTextArea();
         dialogue.setLineWrap(true);
         JScrollPane scrollBar = new JScrollPane(dialogue);
+        //style
+        botStyle = new SimpleAttributeSet();
+        StyleConstants.setItalic(botStyle, true);
+        StyleConstants.setForeground(botStyle, Color.BLUE);
         // panel for checkbox, message field and button
         JPanel bp = new JPanel();
         bp.setLayout(new BoxLayout(bp, BoxLayout.X_AXIS));
-        ai = new JCheckBox("AI");
-        //ai.doClick();
+        ai = new JCheckBox(CHB_AI);
+        ai.doClick();
         message = new JTextField();
         message.addActionListener(this);
-        JButton enter = new JButton("Enter");
+        JButton enter = new JButton(BTN_ENTER);
         enter.addActionListener(this);
         // adding all elements to the window
         bp.add(ai);
