@@ -1,4 +1,4 @@
-package ru.serdyuk;
+package ru.serdyuk.simplebot;
 
 import java.util.*;
 import java.util.regex.*;

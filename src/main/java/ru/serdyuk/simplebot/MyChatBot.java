@@ -1,4 +1,4 @@
-package ru.serdyuk;
+package ru.serdyuk.simplebot;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -34,10 +34,7 @@ public class MyChatBot extends JFrame implements ActionListener {
         dialogue = new JTextArea();
         dialogue.setLineWrap(true);
         JScrollPane scrollBar = new JScrollPane(dialogue);
-        //style
-        botStyle = new SimpleAttributeSet();
-        StyleConstants.setItalic(botStyle, true);
-        StyleConstants.setForeground(botStyle, Color.BLUE);
+
         // panel for checkbox, message field and button
         JPanel bp = new JPanel();
         bp.setLayout(new BoxLayout(bp, BoxLayout.X_AXIS));
