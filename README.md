@@ -11,7 +11,7 @@ https://github.com/serdyuksb1982/MySimpleChatBot.git
  
  Класс MyChatBot, наследующий JFrame, "читатель" - ActionListener.
  
- Класс SimpleBot, содержащий переменные COMMON_PHRASES и ELUSIVE_ANSWERS и метод ayInReturn(String msg, boolean ai), рандомно возвращающий ответ из списка ответов.
+ Класс SimpleBot, содержащий переменные COMMON_PHRASES и ELUSIVE_ANSWERS и метод sayInReturn(String msg, boolean ai), рандомно возвращающий ответ из списка ответов.
  Два режима: AI - искусственный интеллект, работа которого основана на ассоциативном массиве, хранящем вопросы и ответы. Значения ключей вопросов, являются ключами ответов.
  
  Выбор ответов происходит на основе логики метода sayInReturn, использующего регулярные выражения для фильтрации.
