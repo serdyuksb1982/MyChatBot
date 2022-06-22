@@ -15,4 +15,5 @@ https://github.com/serdyuksb1982/MySimpleChatBot.git
  Графический интерфейс - с использованием awt.swing.
  В отдельном (виртуальном) потоке, создаваемом в классе thdReceiver.
  Посмотреть порт для винды: cmd -> ipconfig, для МАК и Линукс terminal -> ifconfig.
+ jframe.
  
